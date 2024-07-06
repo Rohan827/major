@@ -1,5 +1,9 @@
 .container{
     font-family: "Plus Jakarta Sans" , sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex: 1;
 
 }
 .navbar{
@@ -69,18 +73,37 @@
 }
 
 /* Card Effects  */
-.card-img-overlay {
+/* .card-img-overlay {
     opacity:0;
 
-};
+}; */
 
+.card-img-overlay{
+    opacity: 0;
+}
 .card-img-overlay:hover {
     opacity: 0.5;
     background-color: white;
 };
-.card-body:hover
-{
-    opacity: 0.5;
-    background-color: white;
 
+.btn-add {
+    background-color: #fe424d !important;
+
+}
+
+.edit-btn{
+    background-color: #fe424d !important;
+}
+
+/* Show page */
+.show-img{
+    height: 30vh;
+}
+
+.btns{
+    display: flex;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
 }

@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanderlust</title>
-</head>
-<body>
+<%- layout("/layouts/boilerplate.ejs") %>
+
     <div class="row">
-        <div class="col-8">
+        <div class="col-8 offset-2 ">
     <h1>Create a new listing</h1>
 
     <form method="post" action="/listings">
@@ -39,30 +33,36 @@
         </div>
         
         <br><br>
-        <div class="mb-3">
-            <label for="price" class="form-label" >Price</label><br>
-            <input type="number" name="listing[price]" placeholder="enter price" class="form-control">
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="price" class="form-label" >Price</label><br>
+                <input type="number" name="listing[price]" placeholder="enter price" class="form-control">
+            </div>
+            <div class="mb-3 col-md-8">
+                <label for="price" class="form-label" >Country</label><br>
+                <input type="text" name="listing[country]" placeholder="enter country" class="form-control" >
+            </div>
+
+
         </div>
+        
         
         <br><br>
         <div>
-            <label for="price" class="form-label" >Location</label><br>
+            <label for="location" class="form-label" >Location</label><br>
             <input type="text" name="listing[location]" placeholder="enter location" class="form-control" >
 
         </div>
         
         <br><br>
-        <div class="mb-3">
-            <label for="price" class="form-label" >Country</label><br>
-            <input type="text" name="listing[country]" placeholder="enter country" class="form-control" >
-        </div>
+        
         
         <br><br>
-        <button class="btn btn-dark" >Add</button>
+        <button class="btn btn-dark btn-add" >Add</button>
         
     </form>
 </div>
 </div>
     
-</body>
-</html>
+
+
